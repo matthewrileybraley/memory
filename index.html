@@ -1,1 +1,68 @@
-<h1>My first title</h1>
+<style>
+.game_box{
+  background-color:red;
+  width: 200px;
+  height: 200px;
+  }
+</style>
+
+
+<h1>Memory Game</h1>
+
+
+<table>
+  <tr>
+    <td>
+      <div class="game_box" id="box_0"></div>
+    </td>
+
+    <td>
+      <div class="game_box" id="box_1"></div>
+    </td>
+
+    <td>
+      <div class="game_box" id="box_2"></div>
+    </td>
+
+    <td>
+      <div class="game_box" id="box_3"></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <div class="game_box" id="box_4"></div>
+    </td>
+
+    <td>
+      <div class="game_box" id="box_5"></div>
+    </td>
+
+    <td>
+      <div class="game_box" id="box_6"></div>
+    </td>
+
+    <td>
+      <div class="game_box" id="box_7"></div>
+    </td>
+
+  </tr>
+</table>
+
+
+<script src="jquery-3.5.1.min.js">
+<script>
+
+<script>
+  card_obj = {
+    card_letters: ["a", "b", "c", "d", "a", "b", "c", "d"],
+    visible_letters: [],
+    selected_boxes: [],
+  }
+
+$(".game_box").on("click",function(){
+  alert("you clicked a box");
+
+});
+
+</script>
